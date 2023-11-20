@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ashutosh_Gadde_Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <script>
+    function toggleMenu() {
+      const menu = document.querySelector(".menu-links");
+      const icon = document.querySelector(".hamburger-icon");
+      menu.classList.toggle("open");
+      icon.classList.toggle("open");
+    }</script>
+</head>
+
+<body>
+  <div id="main-page">
+  <nav id="desktop-nav">
+    <div class="logo">Ashutosh Gadde</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#Experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">Ashutosh Gadde</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#Experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container" id="pimg1">
+      <img src="./assets/Profile_Picture/profile-pic.png" alt="Ashutosh Gadde profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Ashutosh Gadde</h1>
+      <p class="section__text__p2">Web GIS Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2"
+          onclick="window.open('https://drive.google.com/file/d/151It_Lo3cBhhdF1eVfhHrIaZnkMoRx8y/view?usp=drive_link')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+    </div>
+    
+  </section> 
+</div>
+<!-- About Page -->
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/Profile_Picture/profile-pic2.png" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/Exp.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>2+ years <br />GIS Engineer</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>B.E. In Civil Engg<br />Diploma In Civil Engg</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            Greetings! I'm Ashutosh Gadde, a committed professional with a strong interest in the ever-evolving field of
+            web development for Geographic Information Systems (GIS). Having a background in GIS, I've set out on an
+            exciting quest to create cutting-edge geospatial solutions by fusing my spatial skills with cutting-edge
+            web programming talents.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#skills'" />
+  </section>
+
+  <!-- Skills Page -->
+  <section id="skills">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Skills</h1>
+    <div class="skills-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="skills-sub-title">Web GIS Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>HTML</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>CSS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Geoserver</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Python</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="details-container">
+          <h2 class="skills-sub-title">GIS Software Skills</h2>
+          <div class="article-container">
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>ArcMap</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>ARCGIS Online</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>QGIS</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Google Earth Pro</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#Experience'" />
+  </section>
+
+  
+
+<!-- Experience Page -->
+<section id="Experience">
+  <p class="section__text__p1">Explore My</p>
+  <h1 class="title">Experience</h1>
+  <div class="Experience-details-container">
+    <div class="Experience-containers">
+      <div class="Experience-container">
+        <div class="Experience-article-container">
+          <aside class="article">
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>GIS Executive</h3>
+              <p>Genesys International Corporation</p>
+              <p>Mumbai</p>
+              <p class="Experience-Time">(04/2022 - Present)</p>
+              <p>Quality Assurance and Finalization of Road Navigation Data as per client review in
+                Postgres Database.</p>
+            </div>
+          </aside>
+          <aside class="article">
+            <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+            <div>
+              <h3>GIS Engineer</h3>
+              <p>Flyview GIS Technology Pvt. Ltd </p>
+              <p>Aurangabad</p>
+              <p class="Experience-Time">(06/2021 - 04/2022)</p>
+              <p>QC and completion of rural cartography maps using Drone aerial photographs and survey data from the land records
+                department. Delivery of finalized Geodatabases are handed over to the corresponding districts land record department
+                offices.</p>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#contact-heading'" />
+</section>
+   
+<!-- New Contact -->
+<section id="contact">
+<div id="contact-heading">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+  </div>
+<div class="container1">
+  <form >
+    <div class="row">
+      <div class="labelclass">
+        <label for="fname">First Name</label>
+      </div>
+      <div class="inputclass">
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="labelclass">
+        <label for="lname">Last Name</label>
+      </div>
+      <div class="inputclass">
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="labelclass">
+        <label for="subject">Subject</label>
+      </div>
+      <div class="inputclass">
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row" id="submitbtn">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+
+
+  <div class="contact-info-upper-container">
+    <div class="contact-info-container">
+      <a href="https://github.com/Ashutosh-gadde" target="_blank"><img src="./assets/github.png" alt="GitHub icon" class="icon contact-icon" /></a>
+      <a href="mailto:https://mail.google.com/mail" target="_blank"><img src="./assets/email.png" alt="Email icon" class="icon contact-icon" /></a>
+      <a href="https://www.linkedin.com/in/ashutosh-gadde/" target="_blank"><img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" /></a>
+      <a href="https://www.instagram.com/ashutosh_gadde?utm_source=qr" target="_blank"><img src="./assets/instagram.png" alt="Instagram icon" class="icon contact-icon" /></a>
+      <a href="https://www.facebook.com/ashitosh.gadde" target="_blank"><img src="./assets/Facebook.png" alt="Facebook icon" class="icon contact-icon" /></a>
+    </div>
+  </div>
+</section>
+  <script src="script.js"></script>
+</body>
+
+</html>
+
